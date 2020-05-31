@@ -244,7 +244,7 @@ def main():
     elif dupd:
         down_upd()
     else:
-        print(red+"[!] Type chaospy.py -h for help.")
+        print(red+"[!] Type python3 chaospy.py -h for help.")
 
 if __name__ == '__main__':
     main()
