@@ -1,6 +1,7 @@
 # Chaospy
 Tool written based on chaos from projectdiscovery.io
 <p align="center">
+<img src="https://raw.githubusercontent.com/dr-0x0x/chaospy/master/chaos.PNG">
 </p>
 <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python 2.x"> <img src="https://img.shields.io/github/issues/dr-0x0x/chaospy.svg">
 
