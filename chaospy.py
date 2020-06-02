@@ -118,7 +118,7 @@ def info():
             ch +=1
         sub = sub +item['count']
 
-    print(red+"[!] Programes Last Updated {}".format(item['last_updated'][:10]))
+    print(red+"[!] Programs Last Updated {}".format(item['last_updated'][:10]))
     print(blue+"[!] {} Subdomains.".format(human_format(sub)))
     print(white+"[!] {} Programs.".format(len(data))+end)
     print(green+"[!] {} New programs.".format(new)+end)
