@@ -48,4 +48,8 @@ The recommended version is 3.*
 
 ```
 
-** -- Note -- ** Feel Free to edit or develop this tool
+**Note** 
+
+If you have any feedback or opinions you can pm me [here](https://twitter.com/dr_0x0x)
+
+Feel Free to edit or develop this tool
