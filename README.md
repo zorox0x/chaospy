@@ -4,7 +4,7 @@ Tool written based on chaos from projectdiscovery.io
 <img src="https://raw.githubusercontent.com/dr-0x0x/chaospy/master/chaos.PNG">
 <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python 3.x"> 
-<a href=https://github.com/dr-0x0x/chaospy/issues">
+<a href="https://github.com/dr-0x0x/chaospy/issues">
         <img src="https://img.shields.io/github/issues/dr-0x0x/chaospy.svg">
 <a href="https://twitter.com/intent/follow?screen_name=dr_0x0x">
         <img src="https://img.shields.io/twitter/follow/dr_0x0x?style=social&logo=twitter"
