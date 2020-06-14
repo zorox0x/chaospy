@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import requests,json,os,argparse
-from datetime import datetime
 
 #Colors
 red = '\033[91m'
