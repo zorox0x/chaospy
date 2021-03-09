@@ -54,7 +54,7 @@ banner="""
                                   |_|    |___/ 
 	%s  Small Tool written based on chaos from projectdiscovery.io
         %s      https://chaos.projectdiscovery.io/
-	%s  *Author -> 0x0x (https://twitter.com/dr_0x0x)*                                                    
+	%s  *Author -> Moaaz (https://twitter.com/h1dd3n_bl4d3)*                                                    
 %s \n"""%(blue,red,orange,grey,grey,end)
 
 print (banner)
