@@ -14,7 +14,7 @@ Tool written based on chaos from projectdiscovery.io
 # Installation:
 - Installation on linux:
 ```
-git clone https://github.com/dr-0x0x/chaospy.git
+git clone https://github.com/h1dd3n-bl4d3/chaospy.git
 ```
 ```
 cd chaospy/
