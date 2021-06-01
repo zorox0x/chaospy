@@ -58,6 +58,6 @@ The recommended version is 3.*
 
 **Notes** 
 
-- If you have any feedback or opinions you can pm me [here](https://twitter.com/h1dd3n_bl4d3)
+- If you have any feedback or opinions you can pm me [here](https://twitter.com/ep1n3phr1n3)
 
 - Feel free to edit or develop this tool
