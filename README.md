@@ -1,7 +1,7 @@
 # Chaospy
 Tool written based on chaos from projectdiscovery.io
 <p align="center">
-<img src="https://raw.githubusercontent.com/ep1n3phr1n3/chaospy/master/chaos.PNG">
+<img src="https://raw.githubusercontent.com/ep1n3phr1n3/chaospy/master/chaospy.png">
 <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python 3.x"> 
 <a href="https://github.com/ep1n3phr1n3/chaospy/issues">
@@ -27,26 +27,32 @@ sudo pip3 install -r requirements.txt
 # Usage:
 
 ```
-python3 chaospy.py -h
+python3 chaospy.py --help
 ```
 ```
-usage: chaospy.py [-h] [-d DOWNLOAD] [-a] [-l] [-bc] [-h1] [-ext] [-new] [-upd] [-dbc] [-dh1] [-dext] [-dnew] [-dupd] 
-                          Chaos Tool       
  optional arguments:                                                               
-  -h, --help   show this help message and exit                                    
-  -d DOWNLOAD  Download Specific Program Subdomains                               
-  -a           Download all programs Subdomains                                   
-  -l           List all programs                                                  
-  -bc          List BugCrowd programs                                             
-  -h1          List Hackerone programs
-  -ext         List external programs
-  -new         List new programs
-  -upd         List updated programs
-  -dbc         Download BugCrowd programs
-  -dh1         Download Hackerone programs
-  -dext        Download external programs
-  -dnew        Download new programs
-  -dupd        Download updated programs
+  -h, --help            show this help message and exit
+  -list                 List all programs
+  --list-bugcrowd       List BugCrowd programs
+  --list-hackerone      List Hackerone programs
+  --list-intigriti      List Intigriti programs
+  --list-external       List Self Hosted programs
+  --list-swags          List programs Swags Offers
+  --list-rewards        List programs with rewards
+  --list-norewards      List programs with no rewards
+  --list-new            List new programs
+  --list-updated        List updated programs
+  -download DOWNLOAD    Download Specific Program
+  --download-all        Download all programs
+  --download-bugcrowd   Download BugCrowd programs
+  --download-hackerone  Download Hackerone programs
+  --download-intigriti  Download intigriti programs
+  --download-external   Download external programs
+  --download-swags      Download programs Swags Offers
+  --download-rewards    Download programs with rewards
+  --download-norewards  Download programs with no rewards
+  --download-new        Download new programs
+  --download-updated    Download updated programs
 ```
 # Python Version:
 
