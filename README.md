@@ -1,13 +1,13 @@
 # Chaospy
 Tool written based on chaos from projectdiscovery.io
 <p align="center">
-<img src="https://raw.githubusercontent.com/ep1n3phr1n3/chaospy/master/chaospy.png">
+<img src="https://raw.githubusercontent.com/xrootshell/chaospy/master/chaospy.png">
 <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python 3.x"> 
-<a href="https://github.com/ep1n3phr1n3/chaospy/issues">
-        <img src="https://img.shields.io/github/issues/ep1n3phr1n3/chaospy.svg">
-<a href="https://twitter.com/intent/follow?screen_name=ep1n3phr1n3">
-        <img src="https://img.shields.io/twitter/follow/ep1n3phr1n3?style=social&logo=twitter"
+<a href="https://github.com/xrootshell/chaospy/issues">
+        <img src="https://img.shields.io/github/issues/xrootshell/chaospy.svg">
+<a href="https://twitter.com/intent/follow?screen_name=xrootshell">
+        <img src="https://img.shields.io/twitter/follow/xrootshell?style=social&logo=twitter"
             alt="follow on Twitter"></a>
 </p>
 
@@ -16,7 +16,7 @@ Tool written based on chaos from projectdiscovery.io
 # Installation:
 - Installation on linux:
 ```
-git clone https://github.com/ep1n3phr1n3/chaospy.git
+git clone https://github.com/xrootshell/chaospy.git
 ```
 ```
 cd chaospy/
@@ -64,6 +64,6 @@ The recommended version is 3.*
 
 **Notes** 
 
-- If you have any feedback or opinions you can pm me [here](https://twitter.com/ep1n3phr1n3)
+- If you have any feedback or opinions you can pm me [here](https://twitter.com/xrootshell)
 
 - Feel free to edit or develop this tool
