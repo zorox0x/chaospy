@@ -2,7 +2,8 @@
 Tool written based on chaos from projectdiscovery.io
 <p align="center">
 <img src="https://raw.githubusercontent.com/xrootshell/chaospy/master/chaospy.png">
-<a href="https://www.python.org/">
+</br>
+        <a href="https://www.python.org/">
         <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python 3.x"> 
 <a href="https://github.com/xrootshell/chaospy/issues">
         <img src="https://img.shields.io/github/issues/xrootshell/chaospy.svg">
