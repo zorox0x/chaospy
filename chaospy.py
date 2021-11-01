@@ -31,7 +31,7 @@ banner= """
                                                       /____/
           %s  Small Tool written based on chaos from projectdiscovery.io
           %s          https://chaos.projectdiscovery.io/
-          %s    *Author -> Moaaz (https://twitter.com/ep1n3phr1n3)*
+          %s    *Author -> Moaaz (https://twitter.com/photonbo1t)*
 
    %s \n """%(LightGreen,Yellow,DarkGray,DarkGray,Default)
 
