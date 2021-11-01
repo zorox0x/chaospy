@@ -1,7 +1,6 @@
+#!/usr/bin/python3
 import requests
 import time,os,argparse
-
-
 
 #Colors
 Black        = "\033[30m"
@@ -23,16 +22,16 @@ White        = "\033[97m"
 Default      = '\033[0m'
 
 banner= """
-     
-          %s             ________                     ____       
+
+          %s             ________                     ____
                       / ____/ /_  ____ _____  _____/ __ \__  __
                      / /   / __ \/ __ `/ __ \/ ___/ /_/ / / / /
-                    / /___/ / / / /_/ / /_/ (__  ) ____/ /_/ / 
-                    \____/_/ /_/\__,_/\____/____/_/    \__, /  
-                                                      /____/   
+                    / /___/ / / / /_/ / /_/ (__  ) ____/ /_/ /
+                    \____/_/ /_/\__,_/\____/____/_/    \__, /
+                                                      /____/
           %s  Small Tool written based on chaos from projectdiscovery.io
           %s          https://chaos.projectdiscovery.io/
-          %s    *Author -> Moaaz (https://twitter.com/ep1n3phr1n3)*                                                    
+          %s    *Author -> Moaaz (https://twitter.com/ep1n3phr1n3)*
 
    %s \n """%(LightGreen,Yellow,DarkGray,DarkGray,Default)
 
@@ -96,7 +95,6 @@ def getdata():
     source= requests.get(url)
     return source.json()
 
-
 def info():
     new = 0
     hackerone = 0
@@ -108,7 +106,7 @@ def info():
     rewards= 0
     norewards= 0
     swags= 0
-    
+
     for item in getdata():
         if item['is_new'] is True:
             new += 1
@@ -156,6 +154,7 @@ def down():
             zfile.write(resp.content)
             zfile.close()
             print(LightGreen+"[!] {} File successfully downloaded.".format(zname)+Default)
+
 def list_all():
     print(White+"[!] Listing all Programs. \n"+Default)
     for item in getdata():
@@ -190,7 +189,7 @@ def swags():
     for item in getdata():
         if 'swag' in item:
             print (LightGreen+item['name']+Default)
-            
+
 def rewards():
     print(Cyan+"[!] Listing Rewards Programs."+Default)
     for item in getdata():
@@ -202,11 +201,13 @@ def norewards():
     for item in getdata():
         if item['bounty'] == False:
             print (Red+item['name']+Default)
+
 def new():
     print(LightGreen+"[!] Listing New Programs."+Default)
     for item in getdata():
         if item['is_new'] == True:
             print (LightGreen+item['name']+Default)
+
 def changed():
     print(Cyan+"[!] Listing Updated Programs."+Default)
     for item in getdata():
@@ -222,10 +223,7 @@ def all_down():
         zfile.write(resp.content)
         zfile.close()
     print(LightGreen+"[!] All Programs successfully downloaded."+Default)
-    
-    
-    
-    
+
 def bc_down():
     for item in getdata():
         if item['platform'] == "bugcrowd":
@@ -236,7 +234,6 @@ def bc_down():
             zfile.write(resp.content)
             zfile.close()
     print(LightGreen+"[!] All BugCrowd programs successfully downloaded."+Default)
-
 
 def h1_down():
     for item in getdata():
@@ -260,7 +257,6 @@ def intigriti_down():
             zfile.close()
     print(LightGreen+"[!] All intigriti programs successfully downloaded."+Default)
 
-
 def external_down():
     for item in getdata():
         if item['platform'] == "":
@@ -275,13 +271,13 @@ def external_down():
 def new_down():
     for item in getdata():
         if item['is_new'] is True:
-            print(Cyan+"[!] Downloading {}                   ".format(item['name']),end="\r"+end)
+            print(Cyan+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
             resp = requests.get(item['URL'])
             zname= item['name']+".zip"
             zfile = open(zname, 'wb')
             zfile.write(resp.content)
             zfile.close()
-    print(LightGreen+"[!] All New prgrams successfully downloaded."+Default)
+    print(LightGreen+"[!] All New programs successfully downloaded."+Default)
 
 def updated_down():
     for item in getdata():
@@ -292,9 +288,8 @@ def updated_down():
             zfile = open(zname, 'wb')
             zfile.write(resp.content)
             zfile.close()
-    print(LightGreen+"[!] All Updated programs successfully downloaded."+Default) 
-    
-    
+    print(LightGreen+"[!] All Updated programs successfully downloaded."+Default)
+
 def swags_down():
     for item in getdata():
         if 'swag' in item:
@@ -304,7 +299,7 @@ def swags_down():
             zfile = open(zname, 'wb')
             zfile.write(resp.content)
             zfile.close()
-    print(LightGreen+"[!] All Swags prgrams successfully downloaded."+Default)
+    print(LightGreen+"[!] All Swags programs successfully downloaded."+Default)
 
 def rewards_down():
     for item in getdata():
@@ -315,7 +310,7 @@ def rewards_down():
             zfile = open(zname, 'wb')
             zfile.write(resp.content)
             zfile.close()
-    print(LightGreen+"[!] All Bounty prgrams successfully downloaded."+Default)
+    print(LightGreen+"[!] All Bounty programs successfully downloaded."+Default)
 
 def norewards_down():
     for item in getdata():
@@ -326,10 +321,8 @@ def norewards_down():
             zfile = open(zname, 'wb')
             zfile.write(resp.content)
             zfile.close()
-    print(LightGreen+"[!] All Norewards prgrams successfully downloaded."+Default)
-    
-    
-   
+    print(LightGreen+"[!] All Norewards programs successfully downloaded."+Default)
+
 def main():
     info()
     if download is not None:
