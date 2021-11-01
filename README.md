@@ -28,7 +28,8 @@ sudo pip3 install -r requirements.txt
 # Usage:
 
 ```
-python3 chaospy.py --help
+chmod +x chaospy.py
+./chaospy.py --help
 ```
 ```
  optional arguments:                                                               
