@@ -8,7 +8,7 @@ Tool written based on chaos from projectdiscovery.io
 <a href="https://github.com/xrootshell/chaospy/issues">
         <img src="https://img.shields.io/github/issues/PhotonBolt/chaospy.svg">
 <a href="https://twitter.com/intent/follow?screen_name=PhotonBo1t">
-        <img src="https://img.shields.io/twitter/follow/PhotonBo1t?style=social&logo=twitter"
+        <img src="https://img.shields.io/twitter/follow/moaaz0x0x?style=social&logo=twitter"
             alt="follow on Twitter"></a>
 </p>
 
@@ -68,6 +68,6 @@ The recommended version is 3.*
 
 **Notes** 
 
-- If you have any feedback or opinions you can pm me [here](https://twitter.com/PhotonBo1t)
+- If you have any feedback or opinions you can pm me [here](https://twitter.com/moaaz0x0x)
 
 - Feel free to edit or develop this tool
