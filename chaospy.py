@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+from operator import contains
 import requests
 import time,os,argparse
 
@@ -114,10 +115,10 @@ def info():
             hackerone +=1
         if item['platform'] == "bugcrowd":
             bugcrowd += 1
-        if item['platform'] == "intigriti":
+        if "intigriti" in item['program_url'] :
             intigriti += 1
-        else:
-            external += 1
+        if item['platform'] == "":
+             external += 1
         if item['change'] != 0:
             changed +=1
         subdomains = subdomains +item['count']
@@ -142,7 +143,7 @@ def info():
     print(LightRed+"[!] {} No Rewards programs.".format(norewards)+Default)
 
 def down():
-    print(download)
+    print("--------------------")
     for item in getdata():
         if item['name'] == download:
             print(LightGreen+"[!] Program Found."+Default)
@@ -156,65 +157,76 @@ def down():
             print(LightGreen+"[!] {} File successfully downloaded.".format(zname)+Default)
 
 def list_all():
+    print("--------------------")
     print(White+"[!] Listing all Programs. \n"+Default)
     for item in getdata():
         print (Blue+item['name']+Default)
 
 def bugcrowd():
+    print("--------------------")
     print(Yellow+"[!] Listing Bugcrowd Programs."+Default)
     for item in getdata():
         if item['platform'] == "bugcrowd":
             print (Yellow+item['name']+Default)
 
 def hackerone():
+    print("--------------------")
     print(White+"[!] Listing HackerOne Programs."+Default)
     for item in getdata():
         if item['platform'] == "hackerone":
             print (White+item['name']+Default)
 
 def intigriti():
+    print("--------------------")
     print(Magenta+"[!] Listing intigriti Programs."+Default)
     for item in getdata():
-        if item['platform'] == "hackerone":
+        if "intigriti" in item['program_url']:
             print (Magenta+item['name']+Default)
 
 def external():
+    print("--------------------")
     print(Cyan+"[!] Listing External Programs."+Default)
     for item in getdata():
         if item['platform'] == "":
             print (Cyan+item['name']+Default)
 
 def swags():
+    print("--------------------")
     print(LightGreen+"[!] Listing Swag Programs."+Default)
     for item in getdata():
         if 'swag' in item:
             print (LightGreen+item['name']+Default)
 
 def rewards():
+    print("--------------------")
     print(Cyan+"[!] Listing Rewards Programs."+Default)
     for item in getdata():
         if item['bounty'] == True:
             print (Cyan+item['name']+Default)
 
 def norewards():
+    print("--------------------")
     print(Red+"[!] Listing NORewards Programs."+Default)
     for item in getdata():
         if item['bounty'] == False:
             print (Red+item['name']+Default)
 
 def new():
+    print("--------------------")
     print(LightGreen+"[!] Listing New Programs."+Default)
     for item in getdata():
         if item['is_new'] == True:
             print (LightGreen+item['name']+Default)
 
 def changed():
+    print("--------------------")
     print(Cyan+"[!] Listing Updated Programs."+Default)
     for item in getdata():
         if item['change'] != 0:
             print (Cyan+item['name']+Default)
 
 def all_down():
+    print("--------------------")
     for item in getdata():
         print(Blue+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
         resp = requests.get(item['URL'])
@@ -225,6 +237,7 @@ def all_down():
     print(LightGreen+"[!] All Programs successfully downloaded."+Default)
 
 def bc_down():
+    print("--------------------")
     for item in getdata():
         if item['platform'] == "bugcrowd":
             print(Yellow+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -236,6 +249,7 @@ def bc_down():
     print(LightGreen+"[!] All BugCrowd programs successfully downloaded."+Default)
 
 def h1_down():
+    print("--------------------")
     for item in getdata():
         if item['platform'] == "hackerone":
             print(White+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -247,8 +261,9 @@ def h1_down():
     print(LightGreen+"[!] All HackerOne programs successfully downloaded."+Default)
 
 def intigriti_down():
+    print("--------------------")
     for item in getdata():
-        if item['platform'] == "intigriti":
+        if "intigriti" in item['program_url']:
             print(Magenta+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
             resp = requests.get(item['URL'])
             zname= item['name']+".zip"
@@ -258,6 +273,7 @@ def intigriti_down():
     print(LightGreen+"[!] All intigriti programs successfully downloaded."+Default)
 
 def external_down():
+    print("--------------------")
     for item in getdata():
         if item['platform'] == "":
             print(White+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -269,6 +285,7 @@ def external_down():
     print(LightGreen+"[!] All External programs successfully downloaded."+Default)
 
 def new_down():
+    print("--------------------")
     for item in getdata():
         if item['is_new'] is True:
             print(Cyan+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -280,6 +297,7 @@ def new_down():
     print(LightGreen+"[!] All New programs successfully downloaded."+Default)
 
 def updated_down():
+    print("--------------------")
     for item in getdata():
         if item['change'] != 0:
             print(Blue+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -291,6 +309,7 @@ def updated_down():
     print(LightGreen+"[!] All Updated programs successfully downloaded."+Default)
 
 def swags_down():
+    print("--------------------")
     for item in getdata():
         if 'swag' in item:
             print(LightYellow+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -302,6 +321,7 @@ def swags_down():
     print(LightGreen+"[!] All Swags programs successfully downloaded."+Default)
 
 def rewards_down():
+    print("--------------------")
     for item in getdata():
         if item['bounty'] is True:
             print(Cyan+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -313,6 +333,7 @@ def rewards_down():
     print(LightGreen+"[!] All Bounty programs successfully downloaded."+Default)
 
 def norewards_down():
+    print("--------------------")
     for item in getdata():
         if item['bounty'] is False:
             print(LightRed+"[!] Downloading {}                   ".format(item['name']),end="\r"+Default)
@@ -335,6 +356,8 @@ def main():
         bugcrowd()
     if list_hackerone:
         hackerone()
+    if list_intigriti:
+        intigriti()
     if list_external:
         external()
     if list_swags:
