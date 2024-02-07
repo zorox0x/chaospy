@@ -71,3 +71,15 @@ The recommended version is 3.*
 - If you have any feedback or opinions you can pm me [here](https://twitter.com/zor0x0x)
 
 - Feel free to edit or develop this tool
+
+
+## Star History
+
+<a href="https://star-history.com/#zorox0x/chaospy&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=zorox0x/chaospy&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=zorox0x/chaospy&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=zorox0x/chaospy&type=Date" />
+  </picture>
+</a>
+
